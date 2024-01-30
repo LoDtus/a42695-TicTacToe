@@ -1,0 +1,113 @@
+/* User Profile: --------------------------------------------------------------------------------------------- */
+.userProfile {
+    width: 400px;
+    margin: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.outline {
+    outline: 10px solid rgb(163, 251, 113);
+}
+.profile img {
+    border-radius: 100px;
+}
+.profile p {
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* Board: ---------------------------------------------------------------------------------------------------- */
+.board {
+    width: fit-content;
+    display: grid;
+}
+.square {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+.square:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.square div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square img {
+    width: 45px;
+}
+.onClick {
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+.d-none {
+    display: none;
+}
+
+/* Result: -------------------------------------------------------------------------------------------- */
+.divResult {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 227, 234, 0.7);
+}
+.result {
+    position: relative;
+    top: 18%;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(255, 233, 208);
+    padding: 20px;
+    border-radius: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.result span {
+    display: block;
+    text-align: center;
+}
+.winner {
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(64, 198, 158);
+    margin-top: 3px;
+}
+.trophy {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 15px 0;
+}
+.trophy svg {
+    fill: orange;
+    width: 100px;
+    height: 100px;
+}
+.home {
+    padding: 12px;
+    margin: 3px ;
+    background-color: rgb(255, 49, 49);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+.home:hover {
+    cursor: pointer;
+    background-color: rgba(255, 49, 49, 0.8);
+}
